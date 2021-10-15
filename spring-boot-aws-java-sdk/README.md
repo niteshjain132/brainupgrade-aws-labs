@@ -13,13 +13,13 @@
  * Install [AWS CLI](https://aws.amazon.com/cli/) in your laptop
  * Used later for demonstrating invocation of prediction 
  * service from outside of AWS
- * Configure CLI with myadmin
+ * Configure CLI with admin user
    ```
-   aws configure --profile myadmin
+   aws configure --profile adminuser
    ```
  * Verify Access – List S3 Buckets in your account
    ```
-   aws s3 ls --profile myadmin
+   aws s3 ls --profile adminuser
    ```
 
 ### Configure Users’ credentials.
