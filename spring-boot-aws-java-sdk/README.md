@@ -7,6 +7,7 @@
   * Java 1.8 + and Apache maven
 ### Create AWS Root Account
   * If haven't created an aws account , you can create one by following detailed instruction on this [aws account creation and activation page](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/).
+### Create IAM User
 
 ### AWS Command Line Interface (CLI)
  * Install [AWS CLI](https://aws.amazon.com/cli/) in your laptop
@@ -20,7 +21,7 @@
    ```
    aws s3 ls --profile myadmin
    ```
-### Create IAM User
+
 ### Configure Users’ credentials.
 ### Create Spring Boot project with Initializer.
 ### Setup AWS SDK with maven.
