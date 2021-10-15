@@ -13,9 +13,13 @@
  * Used later for demonstrating invocation of prediction 
  * service from outside of AWS
  * Configure CLI with myadmin
+   ```
    aws configure --profile myadmin
+   ```
  * Verify Access – List S3 Buckets in your account
+   ```
    aws s3 ls --profile myadmin
+   ```
 ### Create IAM User
 ### Configure Users’ credentials.
 ### Create Spring Boot project with Initializer.
