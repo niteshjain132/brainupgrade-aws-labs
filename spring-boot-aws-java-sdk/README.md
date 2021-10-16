@@ -33,5 +33,38 @@
    aws s3 ls --profile adminuser
    ```
 ### Create Spring Boot project with Initializer.
+  * create spring boot maven project with https://start.spring.io/
 ### Setup AWS SDK with maven.
+ * Recommended to use Bill of Material of AWS SDK. 
+ * BOM Manages AWS Modules Dependencies and Fetch all transition Dependencies.
+ ```
+ <dependencyManagement>
+	  <dependencies>
+	   <dependency>
+	    <groupId>software.amazon.awssdk</groupId>
+	    <artifactId>bom</artifactId>
+	    <version>2.17.59</version>
+	    <type>pom</type>
+	    <scope>import</scope>
+	   </dependency>
+	  </dependencies>
+ </dependencyManagement>
+
+ ```
+ * Next add required aws Module dependency as per your project needs like S3,EC2, DynamoDB etc.
+
+ ```
+	<dependency>
+	    <groupId>software.amazon.awssdk</groupId>
+	    <artifactId>s3</artifactId>
+ </dependency>
+ ```
 ### Connect AWS service S3 with Java
+
+## Resoucers:
+  * https://aws.amazon.com/sdk-for-java/
+  * AWS SDK for Java API Reference : https://sdk.amazonaws.com/java/api/latest/
+  * AWS CLI install: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
+  * AWS CLI Configure : https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
+  * AWS SDK Github: https://github.com/aws/aws-sdk-java-v2/#using-the-sdk
+  * AWS SDK Maven Repository: https://mvnrepository.com/artifact/software.amazon.awssdk/ 
