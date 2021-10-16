@@ -18,6 +18,8 @@
  * Install [AWS CLI](https://aws.amazon.com/cli/) in your laptop
  * Used later for demonstrating invocation of prediction 
  * service from outside of AWS
+
+### Configure Users’ credentials.
  * Configure CLI with admin user
    ```
    aws configure --profile adminuser
@@ -26,8 +28,6 @@
    ```
    aws s3 ls --profile adminuser
    ```
-
-### Configure Users’ credentials.
 ### Create Spring Boot project with Initializer.
 ### Setup AWS SDK with maven.
 ### Connect AWS service S3 with Java
