@@ -60,8 +60,10 @@
  </dependency>
  ```
 ### Connect AWS service S3 with Java
+	* Access AWS SDK Client for different services and Implement to build your applcation
+	* for example to access S3 service and perfrom various operation with S3 you may use S3Client in you code.
 
-## Resoucers:
+## Resources:
   * https://aws.amazon.com/sdk-for-java/
   * AWS SDK for Java API Reference : https://sdk.amazonaws.com/java/api/latest/
   * AWS CLI install: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
