@@ -23,6 +23,10 @@
  * Configure CLI with admin user
    ```
    aws configure --profile adminuser
+   AWS Access Key ID [None]: Access Key ID
+   AWS Secret Access Key [None]: Secret Access Key
+   Default region name [None]: us-east-1
+   Default output format [None]:
    ```
  * Verify Access – List S3 Buckets in your account
    ```
