@@ -1,4 +1,4 @@
-# How to deploy Java/spring boot application on Elastic bean stalk?
+# How to deploy Java/spring boot application on Elastic Bean Stalk?
   * There are couple of ways, you can deploy it as either war file or  Jar File.
   * On AWS Console, Go to Elastic bean stalk and click on **Create New Application** which will open new Wizard.
   * Provide application information like Name and description and click **Next**.
