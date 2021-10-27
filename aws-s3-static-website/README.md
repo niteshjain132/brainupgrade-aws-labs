@@ -5,4 +5,8 @@
   * Select Properties > Static Website > Edit  > Enable
   * Once you enable static website hosting option, screen with fields will appear.
   * Select hosting Type as "Host a static website". Enter index docment name (e.g. index.html) and error document name(e.g. error.html), this is optional.
-  * Save changes     
+  * Save changes and your static web site is ready access from browser. 
+  * At the bottom of page,under static web side section, you can see your bucket endpoint e.g. http://aws-labs-brainupgrad.in.s3-website-us-east-1.amazonaws.com/
+
+## Resources:
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html 
