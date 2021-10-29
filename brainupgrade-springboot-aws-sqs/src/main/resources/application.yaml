@@ -1,0 +1,21 @@
+cloud: 
+  aws:
+    region:
+      use-default-aws-region-chain: true
+      static: us-east-1
+      auto: false
+    stack:
+      auto: false
+    credentials: 
+      access-key: AKIASQFWPBQYFFIQ66UF
+      secret-key: 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
+    end-point: 
+      uri: https://sqs.us-east-1.amazonaws.com/172181359664/brainupgrade-sqs-queue.fifo  
+logging:  
+  level:   
+    com: 
+      amazonaws:  
+        util: 
+          EC2MetadataUtils: error
+        internal: 
+          InstanceMetadataServiceResourceFetcher: error
