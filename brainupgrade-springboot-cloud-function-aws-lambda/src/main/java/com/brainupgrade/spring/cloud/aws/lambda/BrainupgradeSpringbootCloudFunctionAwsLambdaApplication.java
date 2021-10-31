@@ -1,5 +1,6 @@
 package com.brainupgrade.spring.cloud.aws.lambda;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -8,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyRequestEvent;
+import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent;
 import com.brainupgrade.spring.cloud.aws.lambda.entity.Student;
 import com.brainupgrade.spring.cloud.aws.lambda.repository.StudentRepository;
 
@@ -23,10 +26,23 @@ public class BrainupgradeSpringbootCloudFunctionAwsLambdaApplication {
   }
 
   @Bean
-  public Function<String, List<Student>> findByName() {
-    return (input) -> studentRepository.studentList().stream()
-        .filter(student -> student.getName().equals(input)).collect(Collectors.toList());
+  public Function<APIGatewayProxyRequestEvent, List<Student>> findByName() {
+    return (proxyRequestEvent) -> studentRepository.studentList().stream()
+        .filter(student -> student.getName().equals(proxyRequestEvent.getQueryStringParameters().get("name"))).collect(Collectors.toList());
   }
+  
+  @Bean
+  public Function<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> getResponse() {
+    return value ->{
+      APIGatewayProxyResponseEvent apiGatewayProxyResponseEvent = new APIGatewayProxyResponseEvent();
+      apiGatewayProxyResponseEvent.setBody(value.getBody());
+      apiGatewayProxyResponseEvent.setStatusCode(201);
+      apiGatewayProxyResponseEvent.setHeaders(Collections.singletonMap("Content-type", "application/json"));
+      return apiGatewayProxyResponseEvent;
+    };
+  }
+  
+    
 
   @Bean
   public MyConsumer myConsumerBean() {

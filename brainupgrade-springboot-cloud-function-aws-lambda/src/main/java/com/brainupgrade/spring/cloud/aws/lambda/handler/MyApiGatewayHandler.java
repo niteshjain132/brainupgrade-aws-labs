@@ -2,8 +2,8 @@ package com.brainupgrade.spring.cloud.aws.lambda.handler;
 
 import org.springframework.cloud.function.adapter.aws.SpringBootRequestHandler;
 import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyRequestEvent;
+import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent;
 
-@SuppressWarnings("deprecation")
-public class StudentHandler extends SpringBootRequestHandler<APIGatewayProxyRequestEvent, Object>{
+public class MyApiGatewayHandler extends SpringBootRequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent>{
 
 }
