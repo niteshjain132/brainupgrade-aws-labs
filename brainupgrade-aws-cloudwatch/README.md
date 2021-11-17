@@ -20,7 +20,9 @@
     sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json
     ```
 
-  * Generate some activity on our system by installing stress - it’s in the Extra Packages for Enterprise Linux (EPEL) repository, so first we'll install the epel repository, then we'll install stress:
+  * Generate some activity on our system by installing stress
+   *  The stress tool is a workload generator that provides CPU, memory and disk I/O stress tests.
+   * it’s in the Extra Packages for Enterprise Linux (EPEL) repository, so first we'll install the epel repository, then we'll install stress.
   ```
   sudo amazon-linux-extras install epel -y
   sudo yum install stress -y
