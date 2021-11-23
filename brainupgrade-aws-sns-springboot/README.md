@@ -1,4 +1,4 @@
-# Spring Boot Application to subscribe and publish message to AWS SNS 
+# Spring Boot Application to send Notifications from SNS Topic to SQS Queue and Email. 
   * Create Standard SNS Queue for example: brainupgrade-sns-topic.
   * Create Group and add add policies to access SNS programmatically with "AdministrativeFullAccess" and "AmazonEC2FullAccess" and add User to this group with programmatic access.
   * Create Spring boot project from spring Initilizer with web and Lombak dependencey.
