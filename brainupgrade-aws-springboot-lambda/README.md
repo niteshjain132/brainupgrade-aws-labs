@@ -80,7 +80,7 @@
  * Create  Lambda function by selecting "Auther from scratch" option, provide function name.
  * select environment Java 11 and you may want to leave other options as default and save.
  * Next edit "Running Settings" and provide the fully qualified handler name.
- * Go to "Course source" section, upload yoor application jar file.
+ * Go to "Course source" section, upload yoor application jar file. Jar file name ends with *-aws.jar.
  * Go to "configuration" > Environment Variable section and provide function name.
  * To integrate functions with API Gateway we need to provide Handler by extending SpringBootRequestHandler with "APIGatewayProxyRequestEvent" "APIGatewayProxyResponseEvent" as per business requirement.
  * Once you incorporate you API Gateway code changes , we can create API Gateway Trigger on Lambda Console page for the Lambda function we created.
