@@ -76,13 +76,17 @@
  ```
 	curl -H "Content-Type:text/palin" localhost:8080/myConsumer -d "brainupgrade"
  ```
+### Deployment with AWS LAMBDA
  * Now let's integrate with aws lambda , go to AWS Lambda Console.
  * Create  Lambda function by selecting "Auther from scratch" option, provide function name.
  * select environment Java 11 and you may want to leave other options as default and save.
  * Next edit "Running Settings" and provide the fully qualified handler name.
  * Go to "Course source" section, upload yoor application jar file. Jar file name ends with *-aws.jar.
  * Go to "configuration" > Environment Variable section and provide function name.
- * To integrate functions with API Gateway we need to provide Handler by extending SpringBootRequestHandler with "APIGatewayProxyRequestEvent" "APIGatewayProxyResponseEvent" as per business requirement.
+ * To integrate functions with API Gateway we need to provide Handler. Since SpringBootRequestHandler has been depricated , we can user below Generic Handler class. There is no need to create Custom Handler class now.
+```
+org.springframework.cloud.function.adapter.aws.FunctionInvoker::handleRequest
+```
  * Once you incorporate you API Gateway code changes , we can create API Gateway Trigger on Lambda Console page for the Lambda function we created.
  * Once API Gateway created, upload the application jar file, Provide Handler configuration, environment variables with Function name.
  * Get API Endpoint and test either with browser or postman for post method.
