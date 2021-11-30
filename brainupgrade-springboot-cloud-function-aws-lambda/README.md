@@ -1,4 +1,4 @@
-# Spring Boot Application with Spring Cloud Fucntions, AWS Lambda and API Gateway.
+# Spring Boot Application with Spring Cloud Functions, AWS Lambda and API Gateway.
   * We can use [Spring Cloud function](https://spring.io/projects/spring-cloud-function#overview to create serverless application with spring boot.
   * Create spring boot project with Spring Initializer with web, lombok dependencies along aws serverless dependency in pom.xml file.
 ```
