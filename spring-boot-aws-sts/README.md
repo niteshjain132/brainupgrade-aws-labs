@@ -10,5 +10,5 @@
   ```
   aws.s3.data.bucket = sts-messages-2021
   ```
-  * Make sure you create message.txt with some text message at some location e.g. C:\\temp\\message.txt and.
+  * Make sure you create message.txt with some text message at some location e.g. C:\\temp\\message.txt.
   * Run applications to use Temporary Security Credentials t upload file to s3 Bucket.
