@@ -53,10 +53,7 @@ public class STSAppConfig {
       //
       // Create an instance of BasicSessionCredentials
       //       
-//      BasicSessionCredentials sessionCredentials = new BasicSessionCredentials(
-//                 sessionCreds.getAccessKeyId(),
-//                 sessionCreds.getSecretAccessKey(),
-//                 sessionCreds.getSessionToken());
+
       AwsSessionCredentials awsSessionCredentials = AwsSessionCredentials.create(sessionCreds.getAccessKeyId(),
           sessionCreds.getSecretAccessKey(), 
           sessionCreds.getSessionToken());

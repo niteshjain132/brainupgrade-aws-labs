@@ -10,8 +10,8 @@ public class StudentRepository {
 
   public List<Student> studentList(){
     return Arrays.asList(
-        new Student(1,"Vaishanav",14),
-        new Student(2,"Daksh",12),
-        new Student(3, "Vishakha",42));
+        new Student(1,"TOM",40),
+        new Student(2,"DIK",29),
+        new Student(3, "HARRY",42));
   }
 }
