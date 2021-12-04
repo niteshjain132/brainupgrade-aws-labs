@@ -1,4 +1,4 @@
-# How to share files from AWS EFS between EC2 instances.
+# How to share files from AWS EFS between EC2 instances?
   * Create a security group (e.g, efs-sg) to associate with the EC2 instances and EFS mount target:
     * Inbound SSH connections to the EC2 instances from your computer (e.g. 0.0.0.0/0 or CIDR block of your network).
     * Inbound NFS connections to the file system via the EFS mount target from the EC2 instances. NFS port:2049 and source should EC2 security group. 
@@ -25,6 +25,11 @@
    * create index.html file under /html directory  e.g `$ echo "<html><body><h1>This is EFS DEMO from Brainupgrade</h1></body></html>" > index.html`
    *  This index.html file should be visible in other EC2 instance and if you update that file you changes should reflect automatically.
 
-## Resources
+### Clean up the Envrionment.
+
+### Resources
  * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html 
+ * https://docs.aws.amazon.com/efs/latest/ug/security-considerations.html
+ * https://docs.aws.amazon.com/efs/latest/ug/troubleshooting-efs-mounting.htm
+
     
