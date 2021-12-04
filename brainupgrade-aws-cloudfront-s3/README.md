@@ -1,4 +1,4 @@
-# How to improve your website perfromance by using Cloud Front with S3?
+# How to improve your website performance by using Cloud Front with S3?
   * Create S3 bucket e.g. "brainupgrade-cloudfront-s32021" with ACL enabled and public access.
   * Upload above images to the bucket and grant public permission.
   * Test whether you can view these images with object URL.
