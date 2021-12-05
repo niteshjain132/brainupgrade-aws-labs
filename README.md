@@ -8,4 +8,5 @@
   * [AWS Command Line Interface](https://docs.aws.amazon.com/cli/index.html)
   * [AWS SDK Reference](https://docs.aws.amazon.com/sdkref/latest/guide/overview.html)
   * [AWS Command Reference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html)
+  * [AWS Pricing Calculator](https://calculator.aws/#/)
   
