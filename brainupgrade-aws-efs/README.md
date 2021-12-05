@@ -22,10 +22,15 @@
     $ ls 
     $ cd /html     
     ```
-   * create index.html file under /html directory  e.g `$ echo "<html><body><h1>This is EFS DEMO from Brainupgrade</h1></body></html>" > index.html`
-   *  This index.html file should be visible in other EC2 instance and if you update that file you changes should reflect automatically.
+   * Create index.html file under /html directory  e.g.
+   ```
+   $ echo "<html><body><h1>This is EFS DEMO from Brainupgrade</h1></body></html>" > index.html
+   ```
+   * This index.html file should be visible in other EC2 instance and if you update that file you changes should reflect automatically.
 
 ### Clean up the Envrionment.
+* Terminate EC2 instances.
+* Delete EFS file system.
 
 ### Resources
  * https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html 
