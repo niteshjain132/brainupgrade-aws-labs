@@ -15,7 +15,7 @@
    * https://<`Alias>`.signin.aws.amazon.com/console
 
 ### AWS Command Line Interface (CLI)
- * Install [AWS CLI](https://aws.amazon.com/cli/) in your laptop
+ * Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in your laptop
  * Used later for demonstrating invocation of prediction 
  * service from outside of AWS
 
@@ -64,9 +64,10 @@
 	* for example to access S3 service and perfrom various operation with S3 you may use S3Client in you code.
 
 ## Resources:
-  * https://aws.amazon.com/sdk-for-java/
-  * AWS SDK for Java API Reference : https://sdk.amazonaws.com/java/api/latest/
-  * AWS CLI install: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
-  * AWS CLI Configure : https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
-  * AWS SDK Github: https://github.com/aws/aws-sdk-java-v2/#using-the-sdk
-  * AWS SDK Maven Repository: https://mvnrepository.com/artifact/software.amazon.awssdk/ 
+  * [AWS SDK JAVA](https://aws.amazon.com/sdk-for-java/)
+  * [AWS SDK for Java API Reference](https://sdk.amazonaws.com/java/api/latest/)
+  * [AWS CLI](https://aws.amazon.com/cli/)
+  * [AWS CLI install](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html)
+  * [AWS CLI Configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+  * [AWS SDK Github](https://github.com/aws/aws-sdk-java-v2/#using-the-sdk)
+  * [AWS SDK Maven Repository](https://mvnrepository.com/artifact/software.amazon.awssdk/) 
