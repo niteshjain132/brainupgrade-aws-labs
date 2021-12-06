@@ -9,4 +9,6 @@
   * [AWS SDK Reference](https://docs.aws.amazon.com/sdkref/latest/guide/overview.html)
   * [AWS Command Reference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html)
   * [AWS Pricing Calculator](https://calculator.aws/#/)
+  * [AWS Regional Services](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
+  * [AWS Free Tier Services](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
   
